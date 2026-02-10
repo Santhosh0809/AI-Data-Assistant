@@ -75,9 +75,9 @@ Analytics: Pandas, NumPy
 📸 Screenshots
 
 ### Natural Language Query to  AI-Generated Insights & Visualization
-![NL to AI-Generated Insights & Visualization](assets/screenshots/'FullUI-1.png')
+![NL to AI-Generated Insights & Visualization](assets/screenshots/FullUI-1.png)
 
-![NL to AI-Generated Insights & Visualization](assets/screenshots/'FullUI-2.png')
+![NL to AI-Generated Insights & Visualization](assets/screenshots/FullUI-2.png)
 
 ▶️ How to Run Locally
 pip install -r requirements.txt
