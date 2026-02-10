@@ -84,7 +84,7 @@ st.markdown("""
 @st.cache_resource
 def get_engine():
     return create_engine(
-        "mysql+pymysql://root:7373421@localhost/global_super_store",
+        "mysql+pymysql://user:password@host/db_name", #Use Your Database credentials
         pool_recycle=3600,
         pool_pre_ping=True
     )
