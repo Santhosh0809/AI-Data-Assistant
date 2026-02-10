@@ -1,108 +1,95 @@
-🚀 AI Data Assistant – Natural Language Analytics Platform
-🔍 Overview
+# 🚀 AI Data Assistant  
+### Natural Language Analytics Platform
 
-AI Data Assistant is an enterprise-grade analytics application that allows business users to query databases using plain English, automatically generating SQL, visualizations, and decision-ready insights — without writing a single line of SQL.
+---
 
-This project focuses on intent understanding, self-healing SQL generation, smart visualization selection, and privacy-first AI deployment using a local LLM.
+## 🔍 Overview
 
-🧠 Core Architecture
+**AI Data Assistant** is an enterprise-grade analytics application that allows business users to query databases using **plain English**.  
+It automatically generates **SQL queries, visualizations, and decision-ready insights** — without writing a single line of SQL.
+
+This project focuses on:
+- Intent understanding  
+- Self-healing SQL generation  
+- Intelligent visualization selection  
+- Privacy-first AI using a **local LLM**
+
+---
+
+## 🧠 Core Architecture
 
 ![Architecture Diagram](assets/architecture.png)
 
-⚙️ Key Features
-🔹 Natural Language → SQL
+---
 
-Converts business questions into optimized MySQL queries
+## ⚙️ Key Features
 
-Auto-enriches results with contextual metrics
+### 🔹 Natural Language → SQL
+- Converts business questions into optimized **MySQL queries**
+- Auto-enriches results with contextual metrics
+- Prevents unsafe SQL operations (`DROP`, `DELETE`, `UPDATE`, etc.)
 
-Prevents unsafe SQL (DROP, DELETE, UPDATE, etc.)
+---
 
-🔹 Self-Healing Query Engine
+### 🔹 Self-Healing Query Engine
+- Automatically fixes SQL errors using **LLM feedback**
+- Retries execution without user intervention
 
-Automatically fixes SQL errors using LLM feedback
+---
 
-Retries execution without user intervention
+### 🔹 Intelligent Visualization Engine
+- Auto-selects best chart type:
+  - Bar, Line, Scatter, Donut, Area, Combo
+- Supports **multi-metric aggregation & alignment**
+- Smart legends, scaling, and color themes
+- Fully interactive **Plotly dashboards**
 
-🔹 Intelligent Visualization Engine
+---
 
-Auto-selects chart type (Bar, Line, Scatter, Donut, Area, Combo)
+### 🔹 Strategic Decision Layer
+Automatically generates:
+- **Observation** – What is happening  
+- **Insight** – Why it matters  
+- **Recommendation** – What to do next  
 
-Supports multi-metric alignment & aggregation
+---
 
-Smart legends, color themes, and scaling
+### 🔹 Enterprise-Grade UI
+- Dark-themed dashboard
+- KPI cards
+- Export results to **CSV / JSON**
+- SQL audit visibility
 
-Fully interactive Plotly dashboards
+---
 
-🔹 Strategic Decision Layer
+### 🔹 Privacy-First AI
+- Uses **local LLM (Qwen-2.5 via Ollama)**
+- No data leaves the machine
+- Fully offline and secure
 
-Generates:
+---
 
-Observation (what is happening)
+## 🛠️ Tech Stack
 
-Insight (why it matters)
+- **Frontend:** Streamlit, Plotly  
+- **Backend:** Python, SQLAlchemy  
+- **Database:** MySQL  
+- **AI Model:** Qwen-2.5 (Local via Ollama)  
+- **Analytics:** Pandas, NumPy  
 
-Recommendation (what to do next)
+---
 
-🔹 Enterprise-Grade UI
+## 📸 Application Screenshots
 
-Dark theme dashboard
+### Natural Language Query → AI Insights & Visualization
 
-KPI cards
+![Full UI 1](assets/screenshots/FullUI-1.png)  
+![Full UI 2](assets/screenshots/FullUI-2.png)
 
-Export to CSV / JSON
+---
 
-SQL audit visibility
+## ▶️ How to Run Locally
 
-🔹 Privacy-First AI
-
-Uses local LLM (Qwen-2.5 via Ollama)
-
-No data leaves the machine
-
-🛠️ Tech Stack
-
-Frontend: Streamlit, Plotly
-
-Backend: Python, SQLAlchemy
-
-Database: MySQL
-
-AI Model: Qwen-2.5 (Local via Ollama)
-
-Analytics: Pandas, NumPy
-
-📸 Screenshots
-
-### Natural Language Query to  AI-Generated Insights & Visualization
-![NL to AI-Generated Insights & Visualization](assets/screenshots/FullUI-1.png)
-
-![NL to AI-Generated Insights & Visualization](assets/screenshots/FullUI-2.png)
-
-▶️ How to Run Locally
+### 1️⃣ Install Dependencies
+```bash
 pip install -r requirements.txt
-streamlit run app.py
-
-
-Ensure:
-
-MySQL is running
-
-Ollama is running locally
-
-Qwen-2.5 model is available
-
-🎯 Use Cases
-
-Sales & Revenue Analysis
-
-HR Attrition Insights
-
-Finance Performance Tracking
-
-Operations & KPI Monitoring
-
-👤 Author
-
-Santhosh C
-Data Analyst | AI Automation | SQL Intelligence
