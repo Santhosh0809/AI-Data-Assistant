@@ -90,6 +90,87 @@ Automatically generates:
 
 ## ▶️ How to Run Locally
 
-### 1️⃣ Install Dependencies
+### 1️⃣ Prerequisites
+Make sure the following are installed on your system:
+
+- Python **3.9 or above**
+- Git
+- Internet connection (required only for first-time model download)
+
+Verify Python:
+```bash
+python --version
+```
+
+---
+
+### 2️⃣ Install Ollama (Local LLM Runtime)
+
+Download and install Ollama from the official site:
+https://ollama.com
+
+Verify installation:
+```bash
+ollama --version
+```
+
+---
+
+### 3️⃣ Download the AI Model (Qwen-2.5)
+
+Pull the required local LLM model:
+```bash
+ollama pull qwen2.5-coder:7b
+```
+
+Confirm the model is available:
+```bash
+ollama list
+```
+
+---
+
+### 4️⃣ Start Ollama Server
+
+Start the Ollama service:
+```bash
+ollama serve
+```
+
+⚠️ **Important:**  
+Keep this terminal **running**. Do not close it while using the application.
+
+---
+
+### 5️⃣ Install Project Dependencies
+
+Navigate to the project directory and install dependencies:
 ```bash
 pip install -r requirements.txt
+```
+
+---
+
+### 6️⃣ Run the Application
+
+Start the Streamlit application:
+```bash
+streamlit run app.py
+```
+
+Open the application in your browser:
+```text
+http://localhost:8501
+```
+
+You can now ask business questions based on your database information in plain English and get SQL, visualizations, and insights.
+## 🧪 Example Queries
+- Show monthly sales trends by region
+- Which products have declining revenue?
+- Compare revenue and profit by category
+- Top 5 customers by total spend
+
+## 👤 Author
+
+**Santhosh C**  
+Data Analyst | AI Automation | SQL Intelligence
